@@ -22,7 +22,8 @@ Finally, the initial candidates from the two approaches are mapped to their corr
 
 `Script: crispr_spurious_pfp.pl proteins.dat initial_candidates.tsv path`
 
-You can choose thresholds for both cas domain coverage and identity. The path is a folder where the cas domain profiles are stored (please see crispr repository GitHub by UPOBioinfo for more details).
+You can choose thresholds for both cas domain coverage and identity. The path is a folder where the cas domain profiles are stored (please see [crispr repository GitHub](https://github.com/UPOBioinfo/crispr) by UPOBioinfo for more details).
+
 When the number of sequences is higher than 500 the following scripts, which use the **NCBI API**, should be used before:
 `Script: download_NCBI_faa_files.pl`
 
