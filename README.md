@@ -10,6 +10,8 @@ It consisted in searching for translations of repeat sequences from the **CRISPR
 
 `Script: crispr_spurious1_initial.pl proteins.fasta crisprcasdb.fasta`
 
+You can use with another argument (1) to obtain one only line per peptide dataset.
+
 ## Second approach (search for peptide repeats)
 It consisted in searching for amino acid repeats separated by putative spacers directly in the protein sequences of **UniProtKB** database.
 
@@ -20,6 +22,7 @@ Finally, the initial candidates from the two approaches are mapped to their corr
 
 `Script: crispr_spurious_pfp.pl proteins.dat initial_candidates.tsv path`
 
+You can choose thresholds for both cas domain coverage and identity. The path is a folder where the cas domain profiles are stored (please see crispr repository GitHub by UPOBioinfo for more details).
 When the number of sequences is higher than 500 the following scripts, which use the **NCBI API**, should be used before:
 `Script: download_NCBI_faa_files.pl`
 
